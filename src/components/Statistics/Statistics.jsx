@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-const Statistics = ({ title, data }) => {
+const Statistics = ({ title }) => {
      return  <section className="statistics">
   <h2 className="title">{title}</h2>
   <ul className="stat-list">
