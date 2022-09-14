@@ -29,7 +29,7 @@ export const App = () => {
           />
       </div>
       <div>
-          <Statistics title="Upload stats" stats={data} />
+        <Statistics title="Upload stats" stats={data} />
       </div>
       <div>
 
