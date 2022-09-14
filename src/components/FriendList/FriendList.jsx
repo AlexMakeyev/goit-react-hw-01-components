@@ -1,8 +1,8 @@
 import FriendListItem from "components/FriendListItem/FriendListItem";
 
-const FriendList = () => {
+const FriendList = ({friends}) => {
     return (<ul className="friend-list">
-    <FriendListItem />
+    <FriendListItem>{friends}</FriendListItem>
   </ul>)
 }
 
