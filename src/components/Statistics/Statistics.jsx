@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 import { Title } from './StatTitle/StatTitle'
 import { StatList, StatisticsSection, StatItem, StatLabel, StatInfo } from './Statistics.styled';
 const Statistics = ({ stats, title }) => {
-     return  <StatisticsSection className="statistics">
+     return  <StatisticsSection>
        {title &&
          <Title title={title} />}
   <StatList>
          {stats.map(({ id, label, percentage }) => (
-          <StatItem key={id} className="item">
-            <StatLabel className="label">{label}</StatLabel>
-            <StatInfo className="percentage">{percentage}</StatInfo>
+          <StatItem key={id}>
+            <StatLabel>{label}</StatLabel>
+            <StatInfo>{percentage}</StatInfo>
           </StatItem>))}
     
     

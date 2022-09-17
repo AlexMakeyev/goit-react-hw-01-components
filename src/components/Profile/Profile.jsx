@@ -22,8 +22,8 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       <ViewsInfo>{stats.views}</ViewsInfo>
     </StatsInfo>
     <StatsInfo>
-      <Likes className="label">Likes</Likes>
-      <LikesInfo className="quantity">{stats.likes}</LikesInfo>
+      <Likes>Likes</Likes>
+      <LikesInfo>{stats.likes}</LikesInfo>
     </StatsInfo>
   </Stats>
 </Container>
